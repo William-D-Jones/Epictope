@@ -52,14 +52,14 @@ else
     source $(conda info --base)/etc/profile.d/conda.sh
     conda activate epictope
     R -e "BiocManager::install('Biostrings')"
-    R -e "remotes::install_github('FriedbergLab/EpicTope')"
+    R -e "remotes::install_github('William-D-Jones/EpicTope')"
     conda deactivate
     )
     # Install epitope_tag scripts
-    curl -O "https://raw.githubusercontent.com/FriedbergLab/Epictope/main/scripts/single_score.R" 
-    curl -O "https://raw.githubusercontent.com/FriedbergLab/Epictope/main/scripts/plot_scores.R" 
-    curl -O "https://raw.githubusercontent.com/FriedbergLab/Epictope/main/scripts/install.R"
-    curl -O "https://raw.githubusercontent.com/FriedbergLab/Epictope/main/scripts/config_defaults.R" 
+    curl -O "https://raw.githubusercontent.com/William-D-Jones/Epictope/main_fork/scripts/single_score.R" 
+    curl -O "https://raw.githubusercontent.com/William-D-Jones/Epictope/main_fork/scripts/plot_scores.R" 
+    curl -O "https://raw.githubusercontent.com/William-D-Jones/Epictope/main_fork/scripts/install.R"
+    curl -O "https://raw.githubusercontent.com/William-D-Jones/Epictope/main_fork/scripts/config_defaults.R" 
 fi
 
 
