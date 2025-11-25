@@ -62,7 +62,7 @@ For macOS/Linux, commands are issued at the terminal. Dependencies can be instal
 1. Download and place the contents of the "install/mac_linux" folder into your project directory. In your terminal, type "ls" to verify the files are in the correct folder.
 
 ```bash
-curl -o "epictope_install.sh" "https://raw.githubusercontent.com/FriedbergLab/EpicTope/main/install/mac_linux/epictope_install.sh"
+curl -o "epictope_install.sh" "https://raw.githubusercontent.com/William-D-Jones/EpicTope/install_from_fork/install/mac_linux/epictope_install.sh"
 ls
 ```
 
@@ -81,7 +81,7 @@ BLAST and MUSCLE are not available for installation on Windows with conda and ha
 
 1. In Anaconda prompt, download and place the "epictope_install.bat" folder into your project directory with curl. Type "dir" to verify the files are in the correct folder.
 ```bash
-curl -o epictope_install.bat https://raw.githubusercontent.com/FriedbergLab/EpicTope/main/install/windows/epictope_install.bat
+curl -o epictope_install.bat https://raw.githubusercontent.com/William-D-Jones/EpicTope/install_from_fork/install/windows/epictope_install.bat
 dir
 ```
 
@@ -151,12 +151,12 @@ Example workflows with the EpicTope package are available in the **vignettes** f
 The scripts `install.R` and `single_score.R` are provided in the **scripts** folder of this repo to enable one-command operation.
 To run, download the `install.R` and `single_score.R` scripts from this repository either directly from the github page or using git clone.
 
-- [install.R](https://github.com/FriedbergLab/EpicTope/blob/main/scripts/install.R)
+- [install.R](https://github.com/William-D-Jones/EpicTope/blob/install_from_fork/scripts/install.R)
   - This script first downloads the proteomes for the species used in the multiple sequence alignment from the NCBI FTP page.
   - It then converts these sequences into usable files for BLAST.
   - This file need to be re-run if the user changes the species considered in the multiple sequence alignment.
 
-- [single_score.R](https://github.com/FriedbergLab/EpicTope/blob/main/scripts/single_score.R)
+- [single_score.R](https://github.com/William-D-Jones/EpicTope/blob/install_from_fork/scripts/single_score.R)
   - This script takes a UniprotID as input and performs the EpicTope workflow for that protein.
   - It first retrieves the amino acid sequence and Alphafold2 predicted structure for the protein.
   - It then BLASTs the protein against the proteomes of the animals used in the multiple sequence alignment, retrieves the highest scoring match (score measured by the lowest E-value), and aligns the matched proteins along with the query in a multiple sequence alignment.
