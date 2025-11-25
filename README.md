@@ -1,3 +1,10 @@
+# EpicTope Fork by William-D-Jones
+
+My fork of [FriedbergLab/Epictope](https://github.com/FriedbergLab/Epictope) makes the following improvements to the original software:
+* Support for new operating systems, including ARM64-based Macs.
+* Upgrade from PDB legacy file format to newer PDBx/mmCIF format for protein structure files.
+* Option to supply a user-specified mmCIF file as a command-line argument. This allows `Epictope` to analyze proteins in Uniprot for which an AlphaFold simulation does not yet exist. Users can submit the protein to AlphaFold and supply the resulting model to `Epictope` (see Example 1C).
+
 # EpicTope
 
 Software for predicting epitope tag insertion sites in proteins.
