@@ -56,10 +56,10 @@ else
     conda deactivate
     )
     # Install epitope_tag scripts
-    curl -O "https://raw.githubusercontent.com/William-D-Jones/Epictope/main_fork/scripts/single_score.R" 
-    curl -O "https://raw.githubusercontent.com/William-D-Jones/Epictope/main_fork/scripts/plot_scores.R" 
-    curl -O "https://raw.githubusercontent.com/William-D-Jones/Epictope/main_fork/scripts/install.R"
-    curl -O "https://raw.githubusercontent.com/William-D-Jones/Epictope/main_fork/scripts/config_defaults.R" 
+    curl -O "https://raw.githubusercontent.com/William-D-Jones/Epictope/install_from_fork/scripts/single_score.R" 
+    curl -O "https://raw.githubusercontent.com/William-D-Jones/Epictope/install_from_fork/scripts/plot_scores.R" 
+    curl -O "https://raw.githubusercontent.com/William-D-Jones/Epictope/install_from_fork/scripts/install.R"
+    curl -O "https://raw.githubusercontent.com/William-D-Jones/Epictope/install_from_fork/scripts/config_defaults.R" 
 fi
 
 
